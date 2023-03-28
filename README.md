@@ -8,8 +8,8 @@ The user interface of this app is completely responsive.
 
 ## `Description`
 
-This project was created individually by me, it was build using different frontend technologies namely `React` javascript library,`Tailwind CSS `
-for designing the responsive UI, `Redux` for state management, `React-icons`, `Formik`, `React-Router-Dom`, `react-testing-library` for testing and  `vercel` for 
+This project has created individually by me, it has build using different frontend technologies namely `React` javascript library,`Tailwind CSS and media query `
+for designing the responsive UI, `Context Api` for state management, `React-icons`, `Formik`, `React-Router-Dom`, `react-testing-library` for testing and  `vercel` for 
 deploying. 
 Languages used in this project are `HTML`, `CSS`, `JavaScript`. 
 
