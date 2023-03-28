@@ -84,13 +84,13 @@ svg.deleteIcon {
   display: none;
 }
 
-div#popup-1 {
+/* div#popup-1 {
   width: auto;
   padding: 8px 20px;
   left: 839px !important;
   top: 340px !important;
 
-}
+} */
 button.react-share__ShareButton {
   margin: 0px 5px;
 }
@@ -129,7 +129,8 @@ cursor: pointer;
 }
 .cards-main {
   gap: 1.4rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0.7rem;
+  
 }
 .card-para{
   
@@ -176,19 +177,19 @@ img.image-box {
   
   max-width: 50%;
   max-height: 10rem;
+  float: left;
+  padding-right: 1rem;
 }
 
 p.definination-box {
  
   flex: 1;
   align-self: center;
-  padding-left: 30px;
   color: #6e6e6e;
   font-size: 0.9rem;
 }
 
 .child {
-  display: flex;
   width: 100%;
 }
 div#root {
@@ -336,7 +337,16 @@ div#root {
 .term_box_inner {padding-left: 5rem; }
 .my_count { position: absolute;top:-1rem; left: -1rem; }
 
-
+.seeAllBtn {
+  display: block!important;
+  margin-left: auto!important;
+  color: red!important;
+  margin-bottom: 4rem!important;
+  font-weight: 700!important;
+  text-transform:initial!important;
+}
+.seeAllBtn.center { margin-right: auto!important; }
+.seeAllBtn.left { margin-left: 0!important; }
 
 /* media query */
 
@@ -398,7 +408,7 @@ h1.sticky+.container {
 .container { padding-inline: 1rem; }
 .box-main { flex-direction: column; }
 .box-main .left-box { width: 100%; }
-.box-main .left-box .terms_list { display: flex; flex-wrap: wrap; }
+.box-main .left-box .terms_list { display: flex; flex-wrap: wrap; padding: 0;}
 .center-box { width: 100%; }
 .term_box { min-height: auto; }
 .child { flex-direction: column; }
@@ -408,4 +418,17 @@ p.definination-box { padding: 0; width: 100%; padding-top: 1rem; }
   width: 100%;
 }
 .bottom-section{overflow: hidden;}
+.seeAllBtn { width: 100%!important; background-color: #cc1313!important; color: #fff!important; margin-top: 1rem!important; }
+.flashCardViewMain .terms_list .font-bold.truncate { margin: 0; padding: 0 0.5rem; }
 }
+
+
+.popup-content {    padding: 2rem;
+  border-radius: 12px;}
+  .share-block-left p { font-size: 1.5rem; font-weight:600}
+  #copy_url:focus{ outline: none; border: none; }
+  .copy_url_inner #copy_url {padding-bottom: 1rem; width: 100%; color: #3b5998; font-size: 15px; font-style: italic; text-decoration: underline;}
+  .share-block-left span { position: absolute; right: 0rem; height: 30px; width: 30px; background: #CC1313; text-align: center; line-height: 30px; border-radius: 50px; color: #fff; cursor: pointer;}
+  .copy_url_inner {position: relative; }
+  button.model-close { position: absolute; top: 0; right: 0; width: 2rem; height: 2rem; background: red; border-radius: 0rem 10rem 0rem 26rem; color: white; font-weight: 600; font-size: 16px; box-shadow: 0px 1px 3px 1px red; }
+  

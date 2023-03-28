@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {Link} from "react-router-dom";
 
 import Button from "@mui/material/Button";
@@ -6,12 +6,28 @@ import defaultImage from "../../Assets/images/pngwing.com.png";
 
 const MyFlashcard = () => {
   const FlashcardDeta = JSON.parse(localStorage.getItem("flashCard"));
+  const[AllFlashcard, setAllFlashcard] = useState(6)
 
+const getClassName = () => {
+
+  if(AllFlashcard > 6){
+    if(FlashcardDeta.length %3 === 0){
+      return "right"
+    }
+    else if(FlashcardDeta.length %3 === 2){
+        return "center"
+    }
+    else{
+      return "left"
+    }
+  }
+  return '';
+}
   return (
     <>
       <div className=" cards-main mt-6 grid items-center justify-center md:grid-cols-3 grid-cols-1">
         {!FlashcardDeta && <p>No Card Found.</p>}
-        {FlashcardDeta?.map((card, index) => (
+        {FlashcardDeta.slice(0,AllFlashcard)?.map((card, index) => (
           <div key={index} className=" cards bg-white border-solid  relative">
             <div className="flex items-center justify-center mt-10">
               <div>
@@ -58,9 +74,20 @@ const MyFlashcard = () => {
                 <p className=" text-center">View Cards</p>
               )}
             </Button>
+           
           </div>
+           
         ))}
+
+        
       </div>
+       {
+          FlashcardDeta.length > 6  && 
+          
+          <Button className={`seeAllBtn ${getClassName()}`} onClick={()=>setAllFlashcard(AllFlashcard === 6 ? (FlashcardDeta.length) : 6)}>
+           { AllFlashcard === 6 ? 'See all' : 'See less' }
+          </Button>
+       }
     </>
   );
 };

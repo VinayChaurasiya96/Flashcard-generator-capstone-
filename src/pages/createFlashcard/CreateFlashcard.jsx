@@ -299,7 +299,7 @@ const CreateFlashcard = ({callbackAddData}) => {
                                 </label>
                                 <div className="image-controls term-action">
                                   <div className="remove_image__btn" onClick={(e)=>removeImage(index, e)}>
-                                  <i class="fa-solid fa-xmark"></i>
+                                  <i className="fa-solid fa-xmark"></i>
                                   </div>
                                   
                                 </div>

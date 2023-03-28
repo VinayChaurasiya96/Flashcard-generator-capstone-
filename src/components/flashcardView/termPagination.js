@@ -11,11 +11,11 @@ const TermPagination = ({currentTerm, allTerms, cardId}) => {
         <div className="hover:text-green-600 text-1xl cursor-pointer">
           {current_Term > 1 ? (
             <Link to={`/myflashcard/${cardId}/term${current_Term - 1}`}>
-               <i class="fa-solid fa-angle-left"></i>
+               <i className="fa-solid fa-angle-left"></i>
             </Link>
           ) : (
             <span>
-               <i class="fa-solid fa-angle-left"></i>
+               <i className="fa-solid fa-angle-left"></i>
             </span>
           )}
         </div>
@@ -25,11 +25,11 @@ const TermPagination = ({currentTerm, allTerms, cardId}) => {
         <div className="hover:text-green-600 text-1xl cursor-pointer">
           {current_Term !== allTerms.length ? (
             <Link to={`/myflashcard/${cardId}/term${current_Term + 1}`}>
-              <i class="fa-solid fa-angle-right"></i>
+              <i className="fa-solid fa-angle-right"></i>
             </Link>
           ) : (
             <span>
-              <i class="fa-solid fa-angle-right"></i>
+              <i className="fa-solid fa-angle-right"></i>
             </span>
           )}
         </div>
