@@ -27,7 +27,7 @@ const getClassName = () => {
     <>
       <div className=" cards-main mt-6 grid items-center justify-center md:grid-cols-3 grid-cols-1">
         {!FlashcardDeta && <p>No Card Found.</p>}
-        {FlashcardDeta.slice(0,AllFlashcard)?.map((card, index) => (
+        {FlashcardDeta?.slice(0,AllFlashcard)?.map((card, index) => (
           <div key={index} className=" cards bg-white border-solid  relative">
             <div className="flex items-center justify-center mt-10">
               <div>
@@ -82,7 +82,7 @@ const getClassName = () => {
         
       </div>
        {
-          FlashcardDeta.length > 6  && 
+          FlashcardDeta?.length > 6  && 
           
           <Button className={`seeAllBtn ${getClassName()}`} onClick={()=>setAllFlashcard(AllFlashcard === 6 ? (FlashcardDeta.length) : 6)}>
            { AllFlashcard === 6 ? 'See all' : 'See less' }

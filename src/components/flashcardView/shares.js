@@ -111,16 +111,16 @@ var pageURL = window.location.href;
             <FacebookShareButton url={pageURL}>
               <FacebookIcon round={true} />
             </FacebookShareButton>
-            <LinkedinShareButton url={pageURL}>>
+            <LinkedinShareButton url={pageURL}>
               <LinkedinIcon round={true} />
             </LinkedinShareButton>
             <WhatsappShareButton url={pageURL}>
               <WhatsappIcon round={true} />
             </WhatsappShareButton>
-            <TwitterShareButton url={pageURL}>>
+            <TwitterShareButton url={pageURL}>
               <TwitterIcon round={true} />
             </TwitterShareButton>
-            <EmailShareButton url={pageURL}>>
+            <EmailShareButton url={pageURL}>
               <EmailIcon round={true} />
             </EmailShareButton>
           </div>

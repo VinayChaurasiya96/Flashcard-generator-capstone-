@@ -327,12 +327,11 @@ const CreateFlashcard = ({callbackAddData}) => {
                           </div>
                     ))}
                     <div className="text-center">
-                    <button
-                      type="button"
-                      className=" text-blue-700 mx-auto block md:mx-0 font-bold pb-10"
-                      onClick={() => push({ name: '', def: '' })}
-                    >+Add More</button>
-                      
+                      <button
+                            type="button"
+                            className=" text-blue-700 mx-auto block md:mx-0 font-bold pb-10"
+                            onClick={() => push({ name: '', def: '' })}
+                      >+Add More</button>
                     </div>
                   </div>
                   )}
