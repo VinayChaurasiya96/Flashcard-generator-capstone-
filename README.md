@@ -18,21 +18,24 @@ This Project Consists of  3 Main Pages.
  
  here we create new group of cards by filling all the required details and clicking on create.
  
- ![2023-02-05](https://user-images.githubusercontent.com/107925230/216805339-e920a534-a9a0-4bb3-b2a6-2e35edf09600.png)
+![Screenshot (692)](https://user-images.githubusercontent.com/80849410/228147996-18d87348-a1ba-47f9-81df-a86d19dcc73c.png)
+
  
  2. ### `My FlashCard Page` 
 
  here we can see all the created cards groups which has a Heading of the group ,the groupicon image , description of 
  cardgroup, total number of cards in the group and a button for viewing the cards on next page.  
  
-  ![2023-02-05 (1)](https://user-images.githubusercontent.com/107925230/216805355-05e08554-3c36-402e-8486-aa03c997a5a1.png)
+  ![Screenshot (694)](https://user-images.githubusercontent.com/80849410/228151123-930c34af-ccf3-4084-a8b6-6e1b3746b919.png)
+
  
  3. ### `FlashCard Details Page`
 
  here we can see the created cards, we can navigate to different flashcards by clicking on sidebar terms 
  given to the card while creating group, we can also share, print and download the flashcard.
  
- ![2023-02-05 (2)](https://user-images.githubusercontent.com/107925230/216805363-3056f981-81ad-448f-861c-e258c3477731.png)
+![Screenshot (696)](https://user-images.githubusercontent.com/80849410/228152059-0bdcf840-c948-44b8-a63c-21794fdbc5f4.png)
+
  
 Deploy Link : [Flashcard-Generator](https://beautiful-lolly-c29d46.netlify.app/)
 
