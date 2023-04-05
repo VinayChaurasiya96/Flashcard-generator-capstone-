@@ -17,6 +17,7 @@ const Main = () => {
       group: data1,
       terms: data2,
     };
+
     var flashCards = [];
     var storageData = JSON.parse(localStorage.getItem("flashCard"));
 

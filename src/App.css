@@ -104,9 +104,10 @@ button.react-share__ShareButton svg {
 }
 
 p.termsfield-count {
+  background-color: red;
+  font-weight: bold;
   width: 20px;
   height: 20px;
-  background-color: #af6262;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,6 +129,13 @@ p.termsfield-count {
 .cards-main {
   gap: 1.4rem;
   padding-bottom: 0.7rem;
+}
+
+.image-controls .del-img {
+  color: #ef0909;
+}
+.image-controls i.fa-regular.fa-trash-can {
+  color: red;
 }
 .card-para {
   overflow: hidden;
@@ -473,13 +481,22 @@ div#root {
 body.Hidden {
   overflow: hidden;
 }
-#downloadFilePage h3{ color: #6d0808; font-size: 1.5rem;}
-#downloadFilePage h4{ font-size: 1.25rem;}
+#downloadFilePage h3 {
+  color: #6d0808;
+  font-size: 1.5rem;
+}
+#downloadFilePage h4 {
+  font-size: 1.25rem;
+}
 /* media query */
 
 @media (max-width: 767px) {
-  #downloadFilePage {font-size: 8px;}
-  #pdfDownload {width: 100vw !important;}
+  #downloadFilePage {
+    font-size: 8px;
+  }
+  #pdfDownload {
+    width: 100vw !important;
+  }
   .img-feild-main span {
     padding: 0.5rem;
   }
@@ -617,12 +634,15 @@ body.Hidden {
     flex-direction: column;
     justify-content: space-around;
   }
-  .copy_url_inner #copy_url {word-break: break-all;}
- 
+  .copy_url_inner #copy_url {
+    word-break: break-all;
+  }
 }
 
-@media(max-width:983px){
-   .img-feild-main {margin-left: 0;}
+@media (max-width: 983px) {
+  .img-feild-main {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
@@ -633,17 +653,21 @@ body.Hidden {
     flex-direction: inherit;
     justify-content: flex-start;
   }
-  .container { padding-inline:0.8rem}
-  .text-red-500 {position: static;}
-
+  .container {
+    padding-inline: 0.8rem;
+  }
+  .text-red-500 {
+    position: static;
+  }
 }
 @media (max-width: 1024px) and (min-width: 991px) {
-  .img-feild-main{margin-left: 1rem; }
+  .img-feild-main {
+    margin-left: 1rem;
+  }
 }
 
 @media (max-width: 1024px) {
   .img-feild-main {
-    
     width: 12rem;
   }
   .img-feild-main span {
