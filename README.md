@@ -37,7 +37,7 @@ This Project Consists of  3 Main Pages.
 ![Screenshot (696)](https://user-images.githubusercontent.com/80849410/228152059-0bdcf840-c948-44b8-a63c-21794fdbc5f4.png)
 
  
-Deploy Link : [Flashcard-Generator](https://beautiful-lolly-c29d46.netlify.app/)
+Deploy Link : [Flashcard-Generator](https://flashcard-generator-1d2e8.web.app)
 
 
 ### `npm start`
