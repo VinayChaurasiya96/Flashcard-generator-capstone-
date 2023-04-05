@@ -1,5 +1,5 @@
 import React from "react";
-import defaultImage from "../../Assets/images/no-image.png";
+import defaultImage from "../../assets/images/no-image.png";
 
 const TermBox = ({termItem}) => {
   return (

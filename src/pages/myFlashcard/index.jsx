@@ -2,11 +2,11 @@ import React, {useState} from "react";
 import {Link} from "react-router-dom";
 
 import Button from "@mui/material/Button";
-import defaultImage from "../../Assets/images/pngwing.com.png";
+import defaultImage from "../../assets/images/pngwing.com.png";
 
 //lottie imports for animation
 import Lottie from "lottie-react";
-import groovyWalkAnimation from "../../Assets/animations/noDataFoundAnimation.json";
+import groovyWalkAnimation from "../../assets/animations/noDataFoundAnimation.json";
 
 const MyFlashcard = () => {
   const FlashcardDeta = JSON.parse(localStorage.getItem("flashCard"));

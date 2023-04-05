@@ -1,10 +1,9 @@
-import Header from "../components/header/Header";
-import CreateFlashcard from "./createFlashcard/CreateFlashcard";
-import MyFlashcard from "./myFlashcard/MyFlashcard";
+import Header from "../components/header";
+import CreateFlashcard from "./createFlashcard";
+import MyFlashcard from "./myFlashcard";
 
 import {Routes, Route} from "react-router-dom";
-// import FlashCardView from "./FlashCardView";
-import FlashCardView from "./FlashCardView";
+import FlashCardView from "./flashCardView";
 import "../index.css";
 
 import {toast} from "react-toastify";

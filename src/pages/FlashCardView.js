@@ -5,7 +5,7 @@ import Shares from "../components/flashcardView/shares";
 import TermBox from "../components/flashcardView/termBox";
 import Backbtn from "../components/flashcardView/backbtn";
 import TermPagination from "../components/flashcardView/termPagination";
-import defaultImage from "../Assets/images/no-image.png";
+import defaultImage from "../assets/images/no-image.png";
 import {useRef} from "react";
 
 const FlashCardView = () => {
