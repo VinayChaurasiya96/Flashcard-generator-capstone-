@@ -3,14 +3,12 @@ import {useParams, NavLink} from "react-router-dom";
 import "reactjs-popup/dist/index.css";
 import Shares from "../components/flashcardView/shares";
 import TermBox from "../components/flashcardView/termBox";
- import Backbtn from "../components/flashcardView/backbtn";
- import TermPagination from "../components/flashcardView/termPagination";
- import defaultImage from '../Assets/images/no-image.png';
- import { useRef } from 'react';
+import Backbtn from "../components/flashcardView/backbtn";
+import TermPagination from "../components/flashcardView/termPagination";
+import defaultImage from "../Assets/images/no-image.png";
+import {useRef} from "react";
 
 const FlashCardView = () => {
-
-  // const componentRef = useRef();
   const params = useParams();
   const {cardId, termId} = params;
   const cardRef = useRef();
@@ -23,23 +21,60 @@ const FlashCardView = () => {
     (item) => item.id === parseInt(card_Id)
   )[0];
 
-    var termObject = currentCard.terms[parseInt(term_Id) - 1];
+  var termObject = currentCard.terms[parseInt(term_Id) - 1];
 
   return (
     <>
-      <div className="pdf_wrapper" style={{width:0, height: 0, overflow: 'auto'}}>
-      <div id="pdfDownload" className='pdfDownload' style={{width:'1100px',  opacity:0, pointerEvents:'none', margin: '30px'}}>
-        <table style={{width : '100%',  borderRadius: '5px'}} id="downloadFilePage">
-          <tbody>
-            <tr>
-              <td style={{width:'50%'}}><img src={termObject.image_base || defaultImage} style={{width:'100%'}} /></td>
-              <td style={{width:'50%', verticalAlign: 'baseline', paddingLeft: '20px'}}>{termObject.defination}</td>
-            </tr>
-          </tbody>
-        </table>
+      <div
+        className="pdf_wrapper"
+        style={{width: 0, height: 0, overflow: "auto"}}
+      >
+        <div
+          id="pdfDownload"
+          className="pdfDownload"
+          style={{
+            width: "1100px",
+            opacity: 0,
+            pointerEvents: "none",
+            margin: "30px",
+          }}
+        >
+          <table
+            style={{width: "100%", borderRadius: "5px"}}
+            id="downloadFilePage"
+          >
+            <tbody>
+              <tr>
+                <td style={{width: "50%"}}>
+                  <img
+                    src={termObject.image_base || defaultImage}
+                    style={{width: "100%"}}
+                    alt="img"
+                  />
+                </td>
+                <td
+                  style={{
+                    width: "50%",
+                    verticalAlign: "baseline",
+                    paddingLeft: "20px",
+                  }}
+                >
+                  <h3>
+                    <b>Group: {currentCard.group.groupName}</b>
+                  </h3>
+                  <h4>
+                    <b>Term: {termObject.name}</b>
+                  </h4>
+
+                  {console.log(currentCard)}
+                  {termObject.defination}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
-      <div className="flashCardViewMain" >
+      <div className="flashCardViewMain">
         <div className="flex items-center gap-4 font-bold ">
           <span>
             <Backbtn />
@@ -73,12 +108,17 @@ const FlashCardView = () => {
             </ul>
           </div>
           <div className="center-box" ref={cardRef}>
-            <TermBox  termItem={termObject} />
+            <TermBox termItem={termObject} />
           </div>
 
           {/* shares component for share, download and print of web page */}
           <div className="right-box">
-            <Shares cardRef={cardRef} downloadTitle={currentCard.group.groupName} rootElementId = "downloadFilePage" downloadFileName = {currentCard.group.groupName} /> 
+            <Shares
+              cardRef={cardRef}
+              downloadTitle={currentCard.group.groupName}
+              rootElementId="downloadFilePage"
+              downloadFileName={currentCard.group.groupName}
+            />
           </div>
         </div>
         <div className="bottom-section">
