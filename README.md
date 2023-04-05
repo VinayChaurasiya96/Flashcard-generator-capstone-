@@ -4,14 +4,20 @@ This is a frontend capstone project assignment from almabetter, it is a flashcar
 flashcards  in a group, this app lets us `create`, `add images along with text` , `share`, `download`, `delete` and `also print the created flashcard`,
 The user interface of this app is completely responsive.
 
+## `Demo` 
+
+https://user-images.githubusercontent.com/80849410/230096092-2a12ea6a-9124-4db8-acd0-ee849e21ec85.mp4
 
 
 ## `Description`
 
 This project has created individually by me, it has build using different frontend technologies namely `React` javascript library,`Tailwind CSS and media query `
-for designing the responsive UI, `Context Api` for state management, `React-icons`, `Formik`, `React-Router-Dom`, `react-testing-library` for testing and  `vercel` for 
+for designing the responsive UI, `Context Api` for state management, `React-icons`, `Formik`, `React-Router-Dom`, `react-testing-library` for testing and  `Firebase` for 
 deploying. 
 Languages used in this project are `HTML`, `CSS`, `JavaScript`. 
+
+
+
 
 This Project Consists of  3 Main Pages.
  1. ### `Create New Page` (Home Page)
