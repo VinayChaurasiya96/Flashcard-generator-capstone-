@@ -8,6 +8,7 @@ import "../index.css";
 
 import {toast} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import NotFound from "../components/404NotFound";
 
 const Main = () => {
   // form data handling and set to local storage
@@ -40,14 +41,16 @@ const Main = () => {
       <div className="container mx-auto">
         <Routes>
           <Route
-            path="/"
-            element={<CreateFlashcard callbackAddData={callbackAddData} />}
-          />
-          <Route path="/myflashcard" element={<MyFlashcard />} />
-          <Route
             path="/myflashcard/:cardId/:termId"
             element={<FlashCardView />}
-          ></Route>
+          />
+          <Route path="*" element={<NotFound />} />
+          <Route
+            path="/"
+            exact
+            element={<CreateFlashcard callbackAddData={callbackAddData} />}
+          />
+          <Route path="/myflashcard" exact element={<MyFlashcard />} />
         </Routes>
       </div>
     </>
