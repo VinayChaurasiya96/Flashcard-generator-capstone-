@@ -62,7 +62,10 @@ const MyFlashcard = () => {
             <div className="flex text-center justify-center ">
               <div className="flex text-md font-bold text-gray-600 ">
                 {card.terms.length === 1 ? (
-                  ""
+                  <>
+                    <p className="mr-1  ">{card.terms.length} </p>
+                    <p className="">Card</p>
+                  </>
                 ) : (
                   <>
                     <p className="mr-1  ">{card.terms.length} </p>
