@@ -522,7 +522,7 @@ body.Hidden {
     top: 5.6rem;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .image_view {
     margin-top: 0.8rem;
   }
@@ -684,10 +684,7 @@ body.Hidden {
   .del-img {
     margin-right: 0.8rem;
   }
-  .image-controls {
-    flex-direction: inherit;
-    justify-content: flex-start;
-  }
+
   .container {
     padding-inline: 0.8rem;
   }

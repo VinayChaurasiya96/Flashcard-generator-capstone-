@@ -32,8 +32,9 @@ const CreateFlashcard = ({callbackAddData}) => {
   async function validateImage(e) {
     var File;
 
-    // 965*724 = 2MB
-    if (e.target.files[0].size > 965 * 724) {
+    // file should not be greater than 2 2MB
+    if (e.target.files[0].size / 1024 / 1024 > 2) {
+      alert(e.target.files[0].size / 1024);
       toast.warn("Image should be less than 2MB");
     } else {
       File = await toBase64(e.target.files[0]);
